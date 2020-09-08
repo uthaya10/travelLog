@@ -1,0 +1,27 @@
+<%- include("partials/header.ejs") %>
+<div class="container" id="showtem">
+            <h1 style="text-align: center;">HI!!! <em><%=curuser.username %></em></h1>
+			<div class="thumbnail" id="show">
+				<img class="img-responsive" src="<%= place["image"] %>">
+				<div class="caption">		
+					<h4>
+						<%= place["name"] %>
+					</h4>
+					<p id="actdesc">
+						<%= place["description"] %>
+					</p>
+					<p>
+						<em>Submitted by <%=place.author.username%></em>
+					</p>
+					<%if(curuser && place.author.id.equals(curuser._id)){%>
+						<a class="btn btn-warning" href="/travellog/<%=place._id%>/edit" style="margin-bottom: 10px;">Edit</a>
+						<form class="butdel" action="/actors/<%=place._id%>/delete?_method=delete" method="POST">
+							<button type="submit" class="btn btn-danger">Delete</button>
+						</form>
+					<%}%>
+				</div>
+			</div>
+</div>
+	
+
+<%- include("partials/footer.ejs") %>

@@ -1,0 +1,58 @@
+<%- include("./partials/header.ejs") %>
+
+
+<div class="jumbotron" id="jumboTravel">
+	<div class="row">
+		<div class="col-md-4">
+			<img src="/pics/home-illustration.svg">
+		</div>
+
+		<div class="col-md-8">
+			<div id="align">
+				<p id="jumboParaOne">
+					Sometimes, what matter is to pack your bags and get on a car and trave NON-STOP
+					<br>
+					<span id="jumboParaTwo">Explore! The World is Not Enough</span>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="strip">
+	<div class="container">
+		<span>
+			<a class="thumb" href="/travellog" style="color: white">MY VISITED PLACE</a>
+			<a class="thumb" href="/travellog/bucket" style="margin-left: 50px; color: #55BD84;">MY BUCKET LIST</a>
+		</span>
+	</div>
+</div>
+<div style="margin-top: 32px">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<h4 style="font-size: 26px; color: #222C6A">My Bucket Places</h4>
+			</div>
+			<div class="col-md-6">
+				<a href="/travellog/new" id="addPlace" class="btn btn-md">Add place</a>
+			</div>
+		</div>
+		<div class="row text-center" id="place" style="margin-top: 26px">
+			<% places.forEach(function(place){ %>
+				<div class="col-md-3 col-sm-6">
+					<div class="thumbnail">
+						<img src="<%=place.image%>">
+						<div class="caption">
+							<h5>
+								<h4><a href="/travellog/bucket/<%=place._id%>"><%=place.name%></a></h4>
+								<p><%=place.date%></p>
+							</h5>
+						</div>
+					</div>
+				</div>
+				<% }) %>
+		</div>
+	</div>
+</div>
+
+<%- include("./partials/footer.ejs") %>

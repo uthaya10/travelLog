@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Travel Dairy</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body style="background-color: #eeeeee;">
+	<nav class="navbar navbar-dark bg-dark" id="navb">
+		<div class="navbar-header">
+			<img src="/pics/travelog-logo-white.svg">
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<% if(curuser){ %>
+					<li><a class="nav-item" href="/travellog">Hi, <%= curuser.username%></a></li>
+					<li><a class="nav-item" href="/logout">LogOut</a></li>
+				<%}%>
+			</ul>
+		</div>
+	</nav>

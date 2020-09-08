@@ -1,0 +1,61 @@
+<%- include("partials/header.ejs") %>
+<div id= "backgr">
+
+	<div id="newBac">
+		<div class="row">
+			<h4><a href="/travellog/visited"><img src="/pics/arrow.svg" alt="" style="width: 3rem; height: 2rem;margin-right: 10px;"></a>Add place</h4>
+			<div class="col-md-6 d-none d-lg-block">
+				<div class="container" style="margin-top: 100px;">
+					<img id="image" src="/pics/travel-illustration.svg" alt="">
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<form action="/travellog" method="POST" id="createForm">
+					<p>Add Details about the place where you have visited</p>
+					<div class="form-group">
+						<label>
+							City
+							<br>
+							<input type="text" name="name" class="form-control" style="width: 444px;height: 47px;" required>
+						</label>
+					</div>
+					<div class="form-group">
+						<label>
+							Photo URL
+							<br>
+							<input type="text" name="image" class="form-control" style="width: 444px;height: 47px;" required>
+						</label>
+					</div>
+					<div class="form-group">
+						<label>
+							Few word about this place
+							<br>
+							<input class="form-control" type="text" name="desc" style="width: 444px; height: 113px" required>
+						</label>
+					</div>
+					<div class="checkbox" style="text-transform: uppercase;font-size: 17px; font-weight:bold;"> 
+						<label>
+							<input type="checkbox" name="visited" value=true>
+							visited
+						</label>
+						<label>
+							<input type="checkbox" name="bucket" value=true>
+							Bucket-list
+						</label>
+					</div>
+					<div class="form-group">
+						<label>
+							When did you travel here?
+							<br>
+							<input class="form-control" type="text" name="date" style="width: 444px;height: 47px;" required>
+						</label>
+					</div>
+					
+					<button class="pull-right">ADD PLACE</button>
+			</div>
+		</div>
+	</div>
+
+	
+</div>
+<%- include("partials/footer.ejs") %>

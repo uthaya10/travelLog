@@ -1,0 +1,314 @@
+body{
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+
+#loginPageBack{
+	background-color: #0E1331;
+}
+
+.loginCan{
+	border-right: 1px solid rgba(217,217,217, 0.5);
+}
+
+#loginDiv{
+	background-color: white;
+	margin: 139px 320px 139px 320px;
+}
+
+.form-control{
+	border-radius: 0;
+	margin-bottom: 11px;
+	padding: 11px 14px 13px;
+}
+#loginForm h4{
+	margin-bottom: 20px;
+}
+#loginForm, #regForm{
+	width:70%; 
+    margin:30px auto;
+    padding: 0;
+}
+
+.bold{
+	font-weight: 700;
+}
+
+.navbar-nva{
+	margin-right: 50px;
+}
+#navb{
+	color: white;
+	background-color: #0E1331;
+	margin-bottom: 0;
+	border-radius: 0;
+	padding-top: 10px; 
+}
+
+#navb .navbar-header{
+	margin-left: 30px;
+	padding-left: 50px;
+}
+.navbar-nav{
+	margin-right: 62px;
+}
+.navbar-nav li:first-child a{
+	border-right: 1px solid white ;
+	padding-right: 30px;
+}
+#navb .nav-item{
+	font-size: 16px;
+	color: #FFFFFF;
+	font-weight: 200;
+	padding-left: 30px;
+}
+
+#navb .nav-item .borderu{
+	border-right: 2px solid rgba(0, 0, 0, 0.3)
+}
+
+.siteButton{
+	background-color: #0E1331;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 700;
+	border-radius: 0;
+	height: 42px;
+}
+
+.siteButton:hover{
+	color: white;
+}
+
+#jumboId{
+	background-size: cover;
+	background-image: url("../pics/login-header.svg");
+	color: #0E1331;
+	height: 250px;
+	padding: 0;
+	border-radius: 0;
+}
+
+#contain{
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+
+
+#jumboParaOne{
+	font-weight: 400;
+	font-size: 15px;
+	color: white;
+	float: left;
+	margin-top: 50px;
+}
+
+#jumboTravel{
+	background-color: #0E1331;
+	height: 250px;
+	margin-top: 0;
+	border-radius: 0;
+	margin-bottom: 10px;
+}
+
+#jumboTravel img{
+	margin-left: 80px;
+}
+
+#jumboParaTwo{
+	font-weight: 400;
+	font-size: 30px;
+	color: white;
+}
+
+#strip{
+	background-color: #245A99;
+	height: 50px;
+	margin: 0 0 0 0 ;
+	padding: 0;
+}
+
+#strip a{
+	padding-right: 50px;
+	font-size: 17px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+#place{
+	display:flex; 
+    flex-wrap:wrap;
+	text-transform: uppercase;
+}
+#place h4 a{
+	font-size: 20px;
+	font-weight: 700;
+	color: #222C6A;
+}
+
+#place p{
+	font-size: 14px;
+	color: #737FC7;
+	margin: 0;
+}
+
+#addPlace{
+	float: right;
+	background-color: #0E1331;
+	color: white;
+	border-radius: 0;
+	text-transform: uppercase;
+}
+.thumbnail{
+	border-radius: 0;
+	padding: 22px 16px 13px;
+}
+.thumbnail img{
+	height: 267px;
+	width: 275px;
+	margin-bottom: 9px;
+}
+
+#newBac{
+	margin-top: 40px;
+	margin-left: 96px;
+}
+
+#newBac img{
+	width: 550px;
+	height: 598px;
+}
+
+#newBac h4{
+	font-size: 32px;
+	font-weight: 900;
+	color: #0E1331;
+}
+#createForm{
+	background-color: white;
+	margin-right: 200px;
+	width: 530px;
+	height: 730px;
+	padding-top: 47px;
+	padding-right: 44px;
+	padding-bottom: 44px;
+	padding-left: 45px;
+	border-bottom: 1px solid rgba(151, 151, 151,0.5);
+	
+}
+#createForm p{
+	font-size: 24px;
+	margin-left: 0;
+	color: #0E1331;
+	font-weight: 600;
+}
+#createForm input[type=text]{
+	padding: 10px 15px;
+	margin: 10px 0;
+}
+#createForm input[type=radio]{
+	border: 1px solid rgba(14, 19, 49,0.5);
+	padding: 10px 15px;
+	margin: 10px 0;
+	height: 750px;
+	border-bottom: 1px solid rgba(151, 151, 151, 1);
+}
+
+#createForm button{
+	width: 123px;
+	background-color: #0E1331;
+	color: white;
+	border-radius:0;
+	height: 35px;
+	text-transform: uppercase;
+}
+#newBac img{
+	width: 653px;
+	height: 598px;
+}
+
+#createForm label{
+	font-size: 17px;
+	color: #0E1331;
+	font-weight: 700;
+}
+#show{
+	margin-top: 50px;
+}
+
+#show img{
+	width: 100%;
+}
+#show h4{
+	font-size: 20px;
+	font-weight: 700;
+	color: #575673;
+}
+
+#showtem{
+	width: 600px;
+	margin-top: 100px;
+	align-items: center;
+}
+
+#formCon{
+	width: 550px;
+	margin-bottom: 0;
+	height: 800px;
+	background-color: white;
+}
+
+.thumbnail .caption{
+	padding: 0;
+}
+.thumbnail h4{
+	margin: 0;
+}
+#delete{
+	margin-top: 15px;
+	font-size: 16px;
+	font-weight: 700;
+	background-color: white;
+	color: #D0021B;
+	border: 0;
+}
+
+.green{
+	color: #55BD84;
+}
+.white{
+	color: #FFF;
+}
+
+#loginError{
+	color: #D0021B;
+	font-size: 16px;
+	margin: 10px 0;
+	font-weight: 700;
+}
+
+.error {
+    display: none;
+}
+.errorshow {
+    color : #D00218;
+    font-weight:bold;
+    margin-left: 59px;
+}
+
+@media only screen and (max-width: 1200px) {
+	#align {
+	  display: none;
+	}
+  }
+
+  @media only screen and (max-width: 1200px) {
+	#loginDiv {
+	  margin: 0;
+	}
+  }
+
+  @media only screen and (max-width: 1200px) {
+	#image {
+	  display: none;
+	}
+  }

@@ -1,0 +1,61 @@
+<%- include("partials/headerlog.ejs") %>
+
+
+<div id="loginDiv">
+	<div class="jumbotron" id="jumboId">
+
+	</div>
+	
+	<div class="container" id="contain">
+		<div class="row">
+			<div class="col-lg-6 col-md-12 loginCan">
+				<form id="loginForm" action="/" method="POST">
+					<h4 class="bold">Login</h4>
+					<div class="form-group">
+						<input type="text" name="username" placeholder="Username" class="form-control">
+					</div>
+					<div class="form-group">
+						<input type="password" name="password" placeholder="Password" class="form-control">
+					</div>
+					<div id="loginError">
+						<%=errorMessage%>
+					</div>
+					<div class="form-group">
+						<button class="btn btn-lg btn-block form-control siteButton">Log In</button>
+					</div>
+				</form>
+			</div>
+			<div class="col-lg-6 col-md-12">
+				<form name="signUP" onsubmit="return sign()" action="/register" method="POST" id="regForm">
+					<p style="font-size: 14px;font-weight: 500;color: #666666;">If you don't already having a account register your account</p>
+					<div class="form-group">
+						<input type="text" name="name" placeholder="Your Name" class="form-control">
+					</div>
+					<div class="form-group">
+						<input type="email" name="email" placeholder="Email Id" class="form-control">
+					</div>
+					<div class="form-group">
+						<input type="text" name="phno" placeholder="Phone No" class="form-control">
+					</div>
+					<div class="form-group">
+						<input type="text" name="username" placeholder="Username" class="form-control">
+					</div>
+					<div class="form-group">
+						<input type="password" name="password" placeholder="Password" class="form-control">
+					</div>
+					<span class="error" id="errormsg"> All Fields are Required</span>
+					<div class="form-group">
+						<button class="form-control btn btn-block btn-lgn siteButton">Register</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	
+	</div>
+
+</div>
+
+
+
+
+<%- include("partials/footer.ejs") %>
